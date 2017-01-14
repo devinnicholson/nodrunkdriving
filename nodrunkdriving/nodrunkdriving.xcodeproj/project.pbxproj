@@ -12,6 +12,7 @@
 		2808C8C81E2A8D1700694C31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2808C8C71E2A8D1700694C31 /* Assets.xcassets */; };
 		2808C8CB1E2A8D1700694C31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2808C8C91E2A8D1700694C31 /* LaunchScreen.storyboard */; };
 		288BE70E1E2A9C5400B50889 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288BE70D1E2A9C5400B50889 /* TestViewController.swift */; };
+		32ED57A31E2A9E55001CEB63 /* ViewControllerTestArshan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ED57A21E2A9E55001CEB63 /* ViewControllerTestArshan.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		2808C8CA1E2A8D1700694C31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2808C8CC1E2A8D1700694C31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		288BE70D1E2A9C5400B50889 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		32ED57A21E2A9E55001CEB63 /* ViewControllerTestArshan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTestArshan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				2808C8C01E2A8D1700694C31 /* AppDelegate.swift */,
 				2808C8C41E2A8D1700694C31 /* Main.storyboard */,
+				32ED57A21E2A9E55001CEB63 /* ViewControllerTestArshan.swift */,
 				2808C8C71E2A8D1700694C31 /* Assets.xcassets */,
 				2808C8C91E2A8D1700694C31 /* LaunchScreen.storyboard */,
 				2808C8CC1E2A8D1700694C31 /* Info.plist */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32ED57A31E2A9E55001CEB63 /* ViewControllerTestArshan.swift in Sources */,
 				288BE70E1E2A9C5400B50889 /* TestViewController.swift in Sources */,
 				2808C8C11E2A8D1700694C31 /* AppDelegate.swift in Sources */,
 			);
