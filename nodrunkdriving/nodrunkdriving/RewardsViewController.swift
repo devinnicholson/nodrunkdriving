@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  RewardsViewController.swift
 //  nodrunkdriving
 //
 //  Created by Pankaj Khillon on 1/14/17.
@@ -7,37 +7,13 @@
 //
 
 import UIKit
-import AVFoundation
 
-class FirstViewController: UIViewController {
-    
-    // MARK: Outlets
-    
-    @IBOutlet weak var logoView: UIImageView!
-
-
-
-    @IBAction func seeRewards(_ sender: Any) {
-    }
-    
-    @IBAction func getRide(_ sender: Any) {
-    }
-    
-    
-    // MARK: System
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationController?.setNavigationBarHidden(true, animated: animated)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        self.navigationController?.setNavigationBarHidden(false, animated: animated)
-    }
+class RewardsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

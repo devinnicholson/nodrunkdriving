@@ -28,15 +28,14 @@
                                     <constraint firstAttribute="height" constant="128" id="QrH-w6-93Y"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQc-BH-5X1">
-                                <rect key="frame" x="154" y="250" width="66" height="61"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQc-BH-5X1">
+                                <rect key="frame" x="62" y="250" width="250" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="JhO-SN-d91"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Scan QR"/>
+                                <state key="normal" image="ScanQRImage"/>
                                 <connections>
-                                    <action selector="scanQR:" destination="GdV-7S-17F" eventType="touchUpInside" id="Ldl-hg-JoP"/>
+                                    <segue destination="dTY-OD-XNg" kind="show" id="adn-zh-6q0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdE-4b-OPa">
@@ -83,59 +82,38 @@
             </objects>
             <point key="canvasLocation" x="350" y="-1065"/>
         </scene>
-        <!--View Controller Test Arshan-->
-        <scene sceneID="Y31-kJ-DSA">
+        <!--Scan View Controller-->
+        <scene sceneID="Cq0-nW-NOW">
             <objects>
-                <viewController id="mJd-h9-jz4" customClass="ViewControllerTestArshan" customModule="nodrunkdriving" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dTY-OD-XNg" customClass="ScanViewController" customModule="nodrunkdriving" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fV3-vu-AVa"/>
-                        <viewControllerLayoutGuide type="bottom" id="0X8-wh-dGV"/>
+                        <viewControllerLayoutGuide type="top" id="1mu-V4-7y8"/>
+                        <viewControllerLayoutGuide type="bottom" id="4XB-Fj-MCw"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="u0o-Xf-Zc4">
+                    <view key="view" contentMode="scaleToFill" id="GTS-9N-184">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uZ-hg-F2F">
-                                <rect key="frame" x="164" y="298" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0L-d9-lIL">
-                                <rect key="frame" x="166" y="453" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Arshan's mothafucking test" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNp-PP-j3i">
-                                <rect key="frame" x="97" y="42" width="210" height="155"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vpe-DT-bgX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Djn-Qh-yMh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="351" y="-303"/>
+            <point key="canvasLocation" x="1046" y="-1065"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="TVz-qM-fc8">
+        <!--Rewards View Controller-->
+        <scene sceneID="VT3-Os-CnM">
             <objects>
-                <viewController id="kcJ-6a-RRF" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="rewardsVC" id="MKp-33-9ql" customClass="RewardsViewController" customModule="nodrunkdriving" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Vyt-LC-rrP"/>
-                        <viewControllerLayoutGuide type="bottom" id="l7G-gd-0M5"/>
+                        <viewControllerLayoutGuide type="top" id="Sqp-fU-c85"/>
+                        <viewControllerLayoutGuide type="bottom" id="B29-oH-LCw"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="0sm-lW-B0e">
+                    <view key="view" contentMode="scaleToFill" id="0Ax-Rk-E1d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sarthak's Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZm-O5-VuE">
-                                <rect key="frame" x="133" y="323" width="109" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rewards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Wg-xM-QIU">
+                                <rect key="frame" x="154" y="323" width="66" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -143,44 +121,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="HZm-O5-VuE" firstAttribute="centerX" secondItem="0sm-lW-B0e" secondAttribute="centerX" id="9vj-c2-zdl"/>
-                            <constraint firstItem="HZm-O5-VuE" firstAttribute="centerY" secondItem="0sm-lW-B0e" secondAttribute="centerY" id="bEr-y4-hPE"/>
+                            <constraint firstItem="2Wg-xM-QIU" firstAttribute="centerX" secondItem="0Ax-Rk-E1d" secondAttribute="centerX" id="Jnw-3u-ytB"/>
+                            <constraint firstItem="2Wg-xM-QIU" firstAttribute="centerY" secondItem="0Ax-Rk-E1d" secondAttribute="centerY" id="Kxc-sr-tLa"/>
                         </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Vdh-Yg-YJR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jRb-hK-HQr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1006" y="-304"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="ahr-TJ-PXQ">
-            <objects>
-                <viewController id="F7L-8P-zaa" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="cmC-qb-eqB"/>
-                        <viewControllerLayoutGuide type="bottom" id="EHr-Y5-ZLE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="mwu-Gs-rJ2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="devinnnnn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Xj-Xb-IXD">
-                                <rect key="frame" x="166" y="49" width="80" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="4Xj-Xb-IXD" firstAttribute="leading" secondItem="mwu-Gs-rJ2" secondAttribute="leading" constant="166" id="rw6-Me-I19"/>
-                            <constraint firstItem="4Xj-Xb-IXD" firstAttribute="top" secondItem="cmC-qb-eqB" secondAttribute="bottom" constant="29" id="sla-c3-bSd"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NKh-gs-Rds" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1666.4000000000001" y="-269.41529235382313"/>
+            <point key="canvasLocation" x="1771" y="-1068"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="K7v-qi-sYI">
@@ -201,4 +149,7 @@
             <point key="canvasLocation" x="-386.39999999999998" y="-1064.6176911544228"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ScanQRImage" width="250" height="47"/>
+    </resources>
 </document>
