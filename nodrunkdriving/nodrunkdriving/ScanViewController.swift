@@ -15,6 +15,8 @@ class ScanViewController: UIViewController, AVCaptureMetadataOutputObjectsDelega
     var captureSession: AVCaptureSession?
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     var qrCodeFrameView: UIView?
+    
+    var foundInfo: String!
 
     
     func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
@@ -48,14 +50,12 @@ class ScanViewController: UIViewController, AVCaptureMetadataOutputObjectsDelega
                 controller?.addAction(failAction)
                 self.present(controller!, animated: true, completion: nil)
             } else {
-                controller = UIAlertController(title: "Scan Complete!", message: nil, preferredStyle: .alert)
+                controller = UIAlertController(title: "Scan Complete!", message: metadataObj.stringValue, preferredStyle: .alert)
                 controller?.addAction(successAction)
                 self.present(controller!, animated: true, completion: nil)
+                self.foundInfo = metadataObj.stringValue
             }
-            
-    
-            
-
+        
             
         }
         
@@ -106,14 +106,19 @@ class ScanViewController: UIViewController, AVCaptureMetadataOutputObjectsDelega
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        let nextVC = segue.destination as! RewardsViewController
+        
+        if let found = self.foundInfo {
+        }
     }
-    */
+ 
 
 }
