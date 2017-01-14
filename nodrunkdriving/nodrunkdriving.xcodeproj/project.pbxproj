@@ -11,6 +11,7 @@
 		2808C8C61E2A8D1700694C31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2808C8C41E2A8D1700694C31 /* Main.storyboard */; };
 		2808C8C81E2A8D1700694C31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2808C8C71E2A8D1700694C31 /* Assets.xcassets */; };
 		2808C8CB1E2A8D1700694C31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2808C8C91E2A8D1700694C31 /* LaunchScreen.storyboard */; };
+		288BE70E1E2A9C5400B50889 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288BE70D1E2A9C5400B50889 /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		2808C8C71E2A8D1700694C31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2808C8CA1E2A8D1700694C31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2808C8CC1E2A8D1700694C31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		288BE70D1E2A9C5400B50889 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,29 +54,14 @@
 		2808C8BF1E2A8D1700694C31 /* nodrunkdriving */ = {
 			isa = PBXGroup;
 			children = (
-				2808C8D31E2A8E1800694C31 /* Model */,
-				2808C8D21E2A8E0B00694C31 /* View Controllers */,
 				2808C8C01E2A8D1700694C31 /* AppDelegate.swift */,
 				2808C8C41E2A8D1700694C31 /* Main.storyboard */,
 				2808C8C71E2A8D1700694C31 /* Assets.xcassets */,
 				2808C8C91E2A8D1700694C31 /* LaunchScreen.storyboard */,
 				2808C8CC1E2A8D1700694C31 /* Info.plist */,
+				288BE70D1E2A9C5400B50889 /* TestViewController.swift */,
 			);
 			path = nodrunkdriving;
-			sourceTree = "<group>";
-		};
-		2808C8D21E2A8E0B00694C31 /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "View Controllers";
-			sourceTree = "<group>";
-		};
-		2808C8D31E2A8E1800694C31 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				288BE70E1E2A9C5400B50889 /* TestViewController.swift in Sources */,
 				2808C8C11E2A8D1700694C31 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +302,7 @@
 				2808C8D11E2A8D1700694C31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
