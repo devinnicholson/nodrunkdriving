@@ -14,7 +14,6 @@
 		288BE7101E2AA66B00B50889 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288BE70F1E2AA66B00B50889 /* FirstViewController.swift */; };
 		28FD82221E2AC43300B7E474 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FD82211E2AC43300B7E474 /* ScanViewController.swift */; };
 		28FD82241E2AD72400B7E474 /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FD82231E2AD72400B7E474 /* RewardsViewController.swift */; };
-		28FD82281E2AE83800B7E474 /* BarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FD82271E2AE83800B7E474 /* BarDetailViewController.swift */; };
 		28FD822A1E2AE8E600B7E474 /* DrinkRewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FD82291E2AE8E600B7E474 /* DrinkRewardTableViewCell.swift */; };
 		28FD822C1E2AE91800B7E474 /* DrinkRewardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FD822B1E2AE91800B7E474 /* DrinkRewardTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -29,7 +28,6 @@
 		288BE70F1E2AA66B00B50889 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		28FD82211E2AC43300B7E474 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		28FD82231E2AD72400B7E474 /* RewardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
-		28FD82271E2AE83800B7E474 /* BarDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarDetailViewController.swift; sourceTree = "<group>"; };
 		28FD82291E2AE8E600B7E474 /* DrinkRewardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkRewardTableViewCell.swift; sourceTree = "<group>"; };
 		28FD822B1E2AE91800B7E474 /* DrinkRewardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkRewardTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,7 +64,6 @@
 			children = (
 				2808C8C01E2A8D1700694C31 /* AppDelegate.swift */,
 				2808C8C41E2A8D1700694C31 /* Main.storyboard */,
-				28FD82271E2AE83800B7E474 /* BarDetailViewController.swift */,
 				288BE70F1E2AA66B00B50889 /* FirstViewController.swift */,
 				28FD82211E2AC43300B7E474 /* ScanViewController.swift */,
 				28FD82231E2AD72400B7E474 /* RewardsViewController.swift */,
@@ -154,7 +151,6 @@
 			files = (
 				28FD82241E2AD72400B7E474 /* RewardsViewController.swift in Sources */,
 				28FD822C1E2AE91800B7E474 /* DrinkRewardTableViewController.swift in Sources */,
-				28FD82281E2AE83800B7E474 /* BarDetailViewController.swift in Sources */,
 				288BE7101E2AA66B00B50889 /* FirstViewController.swift in Sources */,
 				28FD822A1E2AE8E600B7E474 /* DrinkRewardTableViewCell.swift in Sources */,
 				2808C8C11E2A8D1700694C31 /* AppDelegate.swift in Sources */,

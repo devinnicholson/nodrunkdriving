@@ -22,30 +22,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WiG-MY-h0c">
-                                <rect key="frame" x="75" y="72" width="225" height="225"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="225" id="QMb-Cc-qrZ"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQc-BH-5X1">
-                                <rect key="frame" x="62" y="421" width="250" height="61"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="61" id="rEd-0N-kjc"/>
-                                </constraints>
-                                <state key="normal" image="ScanQRImage"/>
-                                <connections>
-                                    <segue destination="dTY-OD-XNg" kind="show" id="adn-zh-6q0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8h-Vq-gLf">
-                                <rect key="frame" x="62" y="509" width="250" height="47"/>
-                                <state key="normal" image="Rewards"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdE-4b-OPa">
                                 <rect key="frame" x="0.0" y="597" width="375" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="dKH-Kd-fTl"/>
+                                    <constraint firstAttribute="height" constant="50" id="xId-5y-SjM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
                                 <state key="normal" title="GET A RIDE">
@@ -55,19 +35,51 @@
                                     <action selector="getRide:" destination="GdV-7S-17F" eventType="touchUpInside" id="Df4-aF-M3Q"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQc-BH-5X1">
+                                <rect key="frame" x="44" y="363" width="286" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="NnX-Ts-rNn"/>
+                                </constraints>
+                                <state key="normal" image="ScanQRImage"/>
+                                <connections>
+                                    <segue destination="dTY-OD-XNg" kind="show" id="HhY-Wm-oSv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jyi-6e-tKD">
+                                <rect key="frame" x="55" y="441" width="270" height="60"/>
+                                <state key="normal" image="see_drink_rewards"/>
+                                <connections>
+                                    <segue destination="K6i-Cd-TPX" kind="show" id="M99-sI-2IF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hg5-aM-TwE">
+                                <rect key="frame" x="52" y="522" width="270" height="60"/>
+                                <state key="normal" image="see_ride_rewards"/>
+                                <connections>
+                                    <segue destination="f47-6h-5Oc" kind="show" id="dBf-dA-1uy"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="WiG-MY-h0c">
+                                <rect key="frame" x="75" y="151" width="225" height="105"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="gQc-BH-5X1" firstAttribute="leading" secondItem="n8h-Vq-gLf" secondAttribute="leading" id="0ff-bS-Q8A"/>
-                            <constraint firstItem="bdE-4b-OPa" firstAttribute="leading" secondItem="9Sf-q6-npu" secondAttribute="leading" id="93F-Ke-qMc"/>
-                            <constraint firstAttribute="bottom" secondItem="bdE-4b-OPa" secondAttribute="bottom" constant="20" symbolic="YES" id="JW1-Uz-YCi"/>
-                            <constraint firstItem="bdE-4b-OPa" firstAttribute="top" secondItem="n8h-Vq-gLf" secondAttribute="bottom" constant="41" id="O7W-vg-VCK"/>
-                            <constraint firstItem="n8h-Vq-gLf" firstAttribute="top" secondItem="gQc-BH-5X1" secondAttribute="bottom" constant="27" id="YUr-zE-x3j"/>
-                            <constraint firstItem="n8h-Vq-gLf" firstAttribute="centerX" secondItem="bdE-4b-OPa" secondAttribute="centerX" id="fI5-Nb-Lq0"/>
-                            <constraint firstAttribute="trailing" secondItem="bdE-4b-OPa" secondAttribute="trailing" id="jSJ-CO-uX3"/>
-                            <constraint firstItem="WiG-MY-h0c" firstAttribute="centerX" secondItem="gQc-BH-5X1" secondAttribute="centerX" id="m3Q-Zk-LYY"/>
-                            <constraint firstItem="WiG-MY-h0c" firstAttribute="leading" secondItem="9Sf-q6-npu" secondAttribute="leadingMargin" constant="59" id="s7P-5u-3ad"/>
-                            <constraint firstItem="WiG-MY-h0c" firstAttribute="top" secondItem="x2q-nw-K8u" secondAttribute="bottom" constant="8" symbolic="YES" id="yd7-JM-n74"/>
+                            <constraint firstItem="bdE-4b-OPa" firstAttribute="top" secondItem="hg5-aM-TwE" secondAttribute="bottom" constant="15" id="2LV-E7-vWy"/>
+                            <constraint firstAttribute="trailing" secondItem="bdE-4b-OPa" secondAttribute="trailing" id="8nZ-me-Zpp"/>
+                            <constraint firstItem="gQc-BH-5X1" firstAttribute="leading" secondItem="9Sf-q6-npu" secondAttribute="leadingMargin" constant="28" id="Cyu-Ax-WqI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jyi-6e-tKD" secondAttribute="trailing" constant="34" id="GZY-Fv-mCs"/>
+                            <constraint firstItem="hg5-aM-TwE" firstAttribute="top" secondItem="Jyi-6e-tKD" secondAttribute="bottom" constant="21" id="Irm-EP-YMC"/>
+                            <constraint firstItem="WiG-MY-h0c" firstAttribute="top" secondItem="x2q-nw-K8u" secondAttribute="bottom" constant="87" id="J7P-nh-ttn"/>
+                            <constraint firstItem="gQc-BH-5X1" firstAttribute="centerX" secondItem="hg5-aM-TwE" secondAttribute="centerX" id="Sg9-eJ-k2a"/>
+                            <constraint firstAttribute="bottom" secondItem="bdE-4b-OPa" secondAttribute="bottom" constant="20" symbolic="YES" id="U9o-9p-eKg"/>
+                            <constraint firstItem="hg5-aM-TwE" firstAttribute="leading" secondItem="9Sf-q6-npu" secondAttribute="leadingMargin" constant="36" id="W9W-3c-V3B"/>
+                            <constraint firstItem="WiG-MY-h0c" firstAttribute="centerX" secondItem="gQc-BH-5X1" secondAttribute="centerX" id="Z2L-oO-lX3"/>
+                            <constraint firstItem="bdE-4b-OPa" firstAttribute="leading" secondItem="9Sf-q6-npu" secondAttribute="leading" id="aaZ-6e-3e8"/>
+                            <constraint firstItem="Jyi-6e-tKD" firstAttribute="top" secondItem="gQc-BH-5X1" secondAttribute="bottom" constant="17" id="e4s-NR-j6R"/>
+                            <constraint firstItem="hg5-aM-TwE" firstAttribute="centerX" secondItem="bdE-4b-OPa" secondAttribute="centerX" id="e4u-k7-i4N"/>
+                            <constraint firstItem="Jyi-6e-tKD" firstAttribute="leading" secondItem="9Sf-q6-npu" secondAttribute="leadingMargin" constant="39" id="siW-Oc-AFd"/>
+                            <constraint firstItem="WiG-MY-h0c" firstAttribute="leading" secondItem="9Sf-q6-npu" secondAttribute="leadingMargin" constant="59" id="vHu-dC-ckE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9U2-PO-3hV"/>
@@ -97,10 +109,10 @@
             </objects>
             <point key="canvasLocation" x="1046" y="-1065"/>
         </scene>
-        <!--Rewards View Controller-->
+        <!--DrinkRewardsQR-->
         <scene sceneID="VT3-Os-CnM">
             <objects>
-                <viewController storyboardIdentifier="rewardsVC" id="MKp-33-9ql" customClass="RewardsViewController" customModule="nodrunkdriving" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="rewardsVC" id="MKp-33-9ql" userLabel="DrinkRewardsQR" customClass="RewardsViewController" customModule="nodrunkdriving" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Sqp-fU-c85"/>
                         <viewControllerLayoutGuide type="bottom" id="B29-oH-LCw"/>
@@ -109,30 +121,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rewards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Wg-xM-QIU">
-                                <rect key="frame" x="154" y="323" width="66" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHg-nW-VZC">
+                                <rect key="frame" x="16" y="28" width="28" height="30"/>
+                                <state key="normal" image="goHome"/>
+                                <connections>
+                                    <segue destination="GdV-7S-17F" kind="presentation" id="zSt-lU-yd6"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="randomQR" translatesAutoresizingMaskIntoConstraints="NO" id="zUw-SN-aww">
+                                <rect key="frame" x="87" y="233" width="200" height="200"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discount_rewards_text" translatesAutoresizingMaskIntoConstraints="NO" id="W57-gU-SSf">
+                                <rect key="frame" x="45" y="508" width="295" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="cqN-kg-X5B"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beer" translatesAutoresizingMaskIntoConstraints="NO" id="9FH-xa-q3Y">
+                                <rect key="frame" x="309" y="105" width="30" height="40"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVE-RJ-pIE">
+                                <rect key="frame" x="31" y="574" width="323" height="79"/>
+                                <state key="normal" image="back_to_drink_rewards"/>
+                                <connections>
+                                    <segue destination="K6i-Cd-TPX" kind="show" id="yIl-5a-MLl"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discount_rewards_title" translatesAutoresizingMaskIntoConstraints="NO" id="KP3-RI-Tcw">
+                                <rect key="frame" x="26" y="105" width="261" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Jbg-NW-fMa"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="2Wg-xM-QIU" firstAttribute="centerX" secondItem="0Ax-Rk-E1d" secondAttribute="centerX" id="Jnw-3u-ytB"/>
-                            <constraint firstItem="2Wg-xM-QIU" firstAttribute="centerY" secondItem="0Ax-Rk-E1d" secondAttribute="centerY" id="Kxc-sr-tLa"/>
+                            <constraint firstItem="KP3-RI-Tcw" firstAttribute="trailing" secondItem="zUw-SN-aww" secondAttribute="trailing" id="I3R-mh-Hjp"/>
+                            <constraint firstItem="aHg-nW-VZC" firstAttribute="top" secondItem="Sqp-fU-c85" secondAttribute="bottom" constant="8" symbolic="YES" id="Iiz-Sq-6jY"/>
+                            <constraint firstItem="9FH-xa-q3Y" firstAttribute="leading" secondItem="KP3-RI-Tcw" secondAttribute="trailing" constant="22" id="Mil-jr-jbO"/>
+                            <constraint firstItem="ZVE-RJ-pIE" firstAttribute="leading" secondItem="0Ax-Rk-E1d" secondAttribute="leadingMargin" constant="15" id="N0H-l5-eLh"/>
+                            <constraint firstItem="ZVE-RJ-pIE" firstAttribute="top" secondItem="W57-gU-SSf" secondAttribute="bottom" constant="46" id="Rbr-w8-SjV"/>
+                            <constraint firstItem="aHg-nW-VZC" firstAttribute="leading" secondItem="0Ax-Rk-E1d" secondAttribute="leadingMargin" id="VHo-Iw-dAF"/>
+                            <constraint firstItem="9FH-xa-q3Y" firstAttribute="top" secondItem="Sqp-fU-c85" secondAttribute="bottom" constant="85" id="Xne-kY-Eky"/>
+                            <constraint firstItem="KP3-RI-Tcw" firstAttribute="bottom" secondItem="9FH-xa-q3Y" secondAttribute="bottom" id="dqf-uA-kUu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9FH-xa-q3Y" secondAttribute="trailing" constant="20" id="fLg-6L-Kzj"/>
+                            <constraint firstItem="KP3-RI-Tcw" firstAttribute="leading" secondItem="0Ax-Rk-E1d" secondAttribute="leadingMargin" constant="10" id="hms-OI-f9G"/>
+                            <constraint firstItem="zUw-SN-aww" firstAttribute="centerY" secondItem="0Ax-Rk-E1d" secondAttribute="centerY" id="kJc-Bu-shr"/>
+                            <constraint firstItem="KP3-RI-Tcw" firstAttribute="top" secondItem="9FH-xa-q3Y" secondAttribute="top" id="lPs-23-XXg"/>
+                            <constraint firstItem="zUw-SN-aww" firstAttribute="leading" secondItem="0Ax-Rk-E1d" secondAttribute="leadingMargin" constant="71" id="mqi-n7-iZc"/>
+                            <constraint firstItem="zUw-SN-aww" firstAttribute="centerX" secondItem="0Ax-Rk-E1d" secondAttribute="centerX" id="ocZ-Ak-lzH"/>
+                            <constraint firstItem="zUw-SN-aww" firstAttribute="top" secondItem="KP3-RI-Tcw" secondAttribute="bottom" constant="88" id="ppw-kf-BfF"/>
+                            <constraint firstItem="W57-gU-SSf" firstAttribute="centerX" secondItem="ZVE-RJ-pIE" secondAttribute="centerX" id="t96-Qk-7tp"/>
+                            <constraint firstItem="B29-oH-LCw" firstAttribute="top" secondItem="ZVE-RJ-pIE" secondAttribute="bottom" constant="14" id="xN3-Cw-Roa"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="304-0O-RLr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jRb-hK-HQr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1771" y="-1068"/>
+            <point key="canvasLocation" x="2528.8000000000002" y="-1065.5172413793105"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="K7v-qi-sYI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tnd-je-A6u" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6zg-t1-bpQ">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="6zg-t1-bpQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -145,114 +201,253 @@
             </objects>
             <point key="canvasLocation" x="-386.39999999999998" y="-1064.6176911544228"/>
         </scene>
-        <!--Drink Reward Table View Controller-->
-        <scene sceneID="e83-qN-E5t">
+        <!--Drink Rewards-->
+        <scene sceneID="9Ta-mk-gtF">
             <objects>
-                <tableViewController storyboardIdentifier="drinkrewardsvc" id="tjk-jg-Zer" customClass="DrinkRewardTableViewController" customModule="nodrunkdriving" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="kRe-dr-vHb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" barStyle="black" id="AzJ-9N-LRf">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <items>
-                                <navigationItem title="Drink Rewards" id="UUH-n6-2xl" colorLabel="IBBuiltInLabel-Red"/>
-                            </items>
-                        </navigationBar>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="93" id="cKM-JV-jLT" customClass="DrinkRewardTableViewCell" customModule="nodrunkdriving" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="375" height="93"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cKM-JV-jLT" id="pbN-xQ-np0">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Slo Brew" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Non-uw-xk6" userLabel="Bar Name">
-                                            <rect key="frame" x="21" y="17" width="346" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfx-ZZ-TuK" userLabel="redeemButton">
-                                            <rect key="frame" x="232" y="34" width="115" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Redeem"/>
-                                            <connections>
-                                                <action selector="redeem:" destination="cKM-JV-jLT" eventType="touchUpInside" id="DRR-N7-i7q"/>
-                                                <segue destination="pbg-14-oVv" kind="show" id="gOR-gx-t7g">
-                                                    <nil key="action"/>
-                                                </segue>
-                                            </connections>
-                                        </button>
-                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="s19-oL-gVU">
-                                            <rect key="frame" x="21" y="62" width="150" height="2"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </progressView>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="barName" destination="Non-uw-xk6" id="hV8-oH-HLp"/>
-                                    <outlet property="redeemButton" destination="hfx-ZZ-TuK" id="Diz-2C-PVr"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="tjk-jg-Zer" id="6g7-Ae-rKH"/>
-                            <outlet property="delegate" destination="tjk-jg-Zer" id="UIc-v1-4z6"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iqp-nC-FPa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="350" y="-315"/>
-        </scene>
-        <!--Bar Detail View Controller-->
-        <scene sceneID="Glc-Km-Aem">
-            <objects>
-                <viewController id="pbg-14-oVv" customClass="BarDetailViewController" customModule="nodrunkdriving" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="K6i-Cd-TPX" userLabel="Drink Rewards" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="z2P-iu-7LZ"/>
-                        <viewControllerLayoutGuide type="bottom" id="Rpw-Nl-wMm"/>
+                        <viewControllerLayoutGuide type="top" id="OAR-iY-99Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="j1L-g2-f0U"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="EUr-4Z-X2s">
+                    <view key="view" contentMode="scaleToFill" id="rA2-3O-UZ6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6I-f9-J5I" userLabel="barName">
-                                <rect key="frame" x="0.0" y="28" width="375" height="94"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shopify-faae7065b7b351d28495b345ed76096c03de28bac346deb1e85db632862fd0e4.png" translatesAutoresizingMaskIntoConstraints="NO" id="lVt-f8-G5p">
-                                <rect key="frame" x="67" y="130" width="240" height="267"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30% off any drink!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCE-2F-9So">
-                                <rect key="frame" x="69" y="497" width="238" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnf-2c-jBv">
+                                <rect key="frame" x="0.0" y="81" width="375" height="489"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="-30" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" image="bar_list_image"/>
+                                <connections>
+                                    <segue destination="e9U-BR-E98" kind="show" id="M2d-p3-SQA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sF-f9-egd">
+                                <rect key="frame" x="41" y="578" width="292" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="RwE-8F-xya"/>
+                                </constraints>
+                                <state key="normal" image="ride_rewards_button"/>
+                                <connections>
+                                    <segue destination="f47-6h-5Oc" kind="show" id="VsB-EN-pD4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIE-2P-iWM">
+                                <rect key="frame" x="16" y="28" width="28" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Q5M-aV-S9M"/>
+                                </constraints>
+                                <state key="normal" image="goHome"/>
+                                <connections>
+                                    <segue destination="GdV-7S-17F" kind="presentation" id="F0q-Mm-rck"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="tnf-2c-jBv" firstAttribute="top" secondItem="TIE-2P-iWM" secondAttribute="bottom" constant="23" id="1vp-ze-hXZ"/>
+                            <constraint firstItem="3sF-f9-egd" firstAttribute="top" secondItem="tnf-2c-jBv" secondAttribute="bottom" constant="8" symbolic="YES" id="DDv-ou-V6h"/>
+                            <constraint firstItem="tnf-2c-jBv" firstAttribute="leading" secondItem="rA2-3O-UZ6" secondAttribute="leading" id="Eh9-ru-m0i"/>
+                            <constraint firstItem="j1L-g2-f0U" firstAttribute="top" secondItem="3sF-f9-egd" secondAttribute="bottom" constant="10" id="Ler-wg-m7c"/>
+                            <constraint firstItem="TIE-2P-iWM" firstAttribute="top" secondItem="OAR-iY-99Y" secondAttribute="bottom" constant="8" symbolic="YES" id="Pls-uW-gD2"/>
+                            <constraint firstItem="tnf-2c-jBv" firstAttribute="centerX" secondItem="3sF-f9-egd" secondAttribute="centerX" id="aWG-AS-7ec"/>
+                            <constraint firstItem="TIE-2P-iWM" firstAttribute="leading" secondItem="rA2-3O-UZ6" secondAttribute="leadingMargin" id="hcP-Rp-Lio"/>
+                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="barName" destination="f6I-f9-J5I" id="r4N-cy-PJ6"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="WPf-1F-3g1"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="50T-Ad-vMK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fdk-rv-jJU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1046" y="-315"/>
+            <point key="canvasLocation" x="735" y="-315"/>
+        </scene>
+        <!--Ride Rewards-->
+        <scene sceneID="bkd-ye-CTq">
+            <objects>
+                <viewController id="f47-6h-5Oc" userLabel="Ride Rewards" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JUM-ED-Ykr"/>
+                        <viewControllerLayoutGuide type="bottom" id="zu7-Sa-fVD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KmT-L6-uWo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JB7-G9-zM8">
+                                <rect key="frame" x="59" y="549" width="257" height="51"/>
+                                <state key="normal" image="ride_rewards_redeem"/>
+                                <connections>
+                                    <segue destination="VoI-xL-cZW" kind="show" id="nh3-WI-5H5"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ride_rewards_saved" translatesAutoresizingMaskIntoConstraints="NO" id="9zc-xv-FGw">
+                                <rect key="frame" x="67" y="413" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="yWC-H6-EHc"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ride_rewards_title" translatesAutoresizingMaskIntoConstraints="NO" id="j02-76-q2q">
+                                <rect key="frame" x="50" y="108" width="275" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="rNP-3b-E0Z"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ride_rewards_car" translatesAutoresizingMaskIntoConstraints="NO" id="p0U-tt-8lS">
+                                <rect key="frame" x="160" y="166" width="55" height="239"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="X4Y-OT-kvg"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gke-pd-4kP">
+                                <rect key="frame" x="16" y="28" width="28" height="30"/>
+                                <state key="normal" image="goHome"/>
+                                <connections>
+                                    <segue destination="GdV-7S-17F" kind="presentation" id="VjS-7a-uTt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9zc-xv-FGw" firstAttribute="leading" secondItem="KmT-L6-uWo" secondAttribute="leadingMargin" constant="51" id="1lx-Ie-7dO"/>
+                            <constraint firstItem="9zc-xv-FGw" firstAttribute="centerX" secondItem="KmT-L6-uWo" secondAttribute="centerX" id="4fR-em-wzB"/>
+                            <constraint firstItem="9zc-xv-FGw" firstAttribute="centerX" secondItem="JB7-G9-zM8" secondAttribute="centerX" id="9eZ-83-aBu"/>
+                            <constraint firstItem="JB7-G9-zM8" firstAttribute="top" secondItem="9zc-xv-FGw" secondAttribute="bottom" constant="8" symbolic="YES" id="Bna-wc-xit"/>
+                            <constraint firstItem="zu7-Sa-fVD" firstAttribute="top" secondItem="JB7-G9-zM8" secondAttribute="bottom" constant="67" id="RBa-Et-yzh"/>
+                            <constraint firstItem="j02-76-q2q" firstAttribute="centerX" secondItem="p0U-tt-8lS" secondAttribute="centerX" id="Wq1-ni-1dc"/>
+                            <constraint firstItem="gke-pd-4kP" firstAttribute="top" secondItem="JUM-ED-Ykr" secondAttribute="bottom" constant="8" symbolic="YES" id="cZK-9A-b3m"/>
+                            <constraint firstItem="p0U-tt-8lS" firstAttribute="top" secondItem="j02-76-q2q" secondAttribute="bottom" constant="8" symbolic="YES" id="hOB-4C-Z1n"/>
+                            <constraint firstItem="gke-pd-4kP" firstAttribute="leading" secondItem="KmT-L6-uWo" secondAttribute="leadingMargin" id="iYH-Nv-blB"/>
+                            <constraint firstItem="9zc-xv-FGw" firstAttribute="top" secondItem="p0U-tt-8lS" secondAttribute="bottom" constant="8" symbolic="YES" id="rWX-qj-FxE"/>
+                            <constraint firstItem="j02-76-q2q" firstAttribute="leading" secondItem="KmT-L6-uWo" secondAttribute="leadingMargin" constant="34" id="toS-Qe-Qd4"/>
+                            <constraint firstItem="p0U-tt-8lS" firstAttribute="centerX" secondItem="9zc-xv-FGw" secondAttribute="centerX" id="xuf-Wo-EZb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RHl-q1-bJt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1434" y="-315"/>
+        </scene>
+        <!--RideCode-->
+        <scene sceneID="y7q-oo-f3x">
+            <objects>
+                <viewController id="VoI-xL-cZW" userLabel="RideCode" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s6v-Ka-1I1"/>
+                        <viewControllerLayoutGuide type="bottom" id="MgD-h5-8kA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TTs-Rz-AA0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JYk-pA-Zsw">
+                                <rect key="frame" x="-1" y="568" width="377" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="YDz-Z2-s3g"/>
+                                </constraints>
+                                <state key="normal" image="back_to_drink_rewards"/>
+                                <connections>
+                                    <segue destination="MKp-33-9ql" kind="show" id="6WV-FI-iFi"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ride_rewards_title" translatesAutoresizingMaskIntoConstraints="NO" id="xhv-C5-MeR">
+                                <rect key="frame" x="50" y="119" width="275" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2g1-tC-G0X"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car_horizontal" translatesAutoresizingMaskIntoConstraints="NO" id="SNd-wQ-CiL">
+                                <rect key="frame" x="67" y="250" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="three_small" translatesAutoresizingMaskIntoConstraints="NO" id="jF3-E6-hNZ">
+                                <rect key="frame" x="77" y="520" width="220" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="Ggt-cW-rK9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="promo_code" translatesAutoresizingMaskIntoConstraints="NO" id="GBd-Wo-Zpb">
+                                <rect key="frame" x="67" y="386" width="240" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="6Fs-mD-wWE"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVw-hS-ymt">
+                                <rect key="frame" x="16" y="20" width="28" height="30"/>
+                                <state key="normal" image="goHome"/>
+                                <connections>
+                                    <segue destination="GdV-7S-17F" kind="presentation" id="TZC-cw-dPO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="kVw-hS-ymt" firstAttribute="leading" secondItem="TTs-Rz-AA0" secondAttribute="leadingMargin" id="8pr-lK-vOd"/>
+                            <constraint firstItem="SNd-wQ-CiL" firstAttribute="leading" secondItem="GBd-Wo-Zpb" secondAttribute="leading" id="9gK-dZ-kfA"/>
+                            <constraint firstItem="xhv-C5-MeR" firstAttribute="top" secondItem="s6v-Ka-1I1" secondAttribute="bottom" constant="99" id="CIu-6w-zaQ"/>
+                            <constraint firstItem="jF3-E6-hNZ" firstAttribute="top" secondItem="GBd-Wo-Zpb" secondAttribute="bottom" constant="59" id="LkT-AA-GjP"/>
+                            <constraint firstItem="SNd-wQ-CiL" firstAttribute="leading" secondItem="TTs-Rz-AA0" secondAttribute="leadingMargin" constant="51" id="Mmc-mT-29D"/>
+                            <constraint firstItem="JYk-pA-Zsw" firstAttribute="top" secondItem="jF3-E6-hNZ" secondAttribute="bottom" constant="26" id="NFh-qV-pn1"/>
+                            <constraint firstItem="SNd-wQ-CiL" firstAttribute="centerX" secondItem="TTs-Rz-AA0" secondAttribute="centerX" id="NwU-sK-94h"/>
+                            <constraint firstItem="JYk-pA-Zsw" firstAttribute="leading" secondItem="TTs-Rz-AA0" secondAttribute="leadingMargin" constant="-17" id="RPi-Pj-33N"/>
+                            <constraint firstItem="xhv-C5-MeR" firstAttribute="centerX" secondItem="SNd-wQ-CiL" secondAttribute="centerX" id="SxE-88-LCi"/>
+                            <constraint firstAttribute="bottom" secondItem="JYk-pA-Zsw" secondAttribute="bottom" constant="20" symbolic="YES" id="b3u-TR-dzD"/>
+                            <constraint firstItem="SNd-wQ-CiL" firstAttribute="top" secondItem="xhv-C5-MeR" secondAttribute="bottom" constant="81" id="bdc-6c-goH"/>
+                            <constraint firstItem="GBd-Wo-Zpb" firstAttribute="centerX" secondItem="jF3-E6-hNZ" secondAttribute="centerX" id="cdL-IO-c6J"/>
+                            <constraint firstItem="jF3-E6-hNZ" firstAttribute="leading" secondItem="TTs-Rz-AA0" secondAttribute="leadingMargin" constant="61" id="fQ5-Ej-xMY"/>
+                            <constraint firstItem="SNd-wQ-CiL" firstAttribute="trailing" secondItem="GBd-Wo-Zpb" secondAttribute="trailing" id="lXW-I3-DnB"/>
+                            <constraint firstItem="jF3-E6-hNZ" firstAttribute="centerX" secondItem="JYk-pA-Zsw" secondAttribute="centerX" id="naU-Pc-4Da"/>
+                            <constraint firstItem="kVw-hS-ymt" firstAttribute="top" secondItem="s6v-Ka-1I1" secondAttribute="bottom" id="pTo-cq-BHy"/>
+                            <constraint firstItem="GBd-Wo-Zpb" firstAttribute="top" secondItem="SNd-wQ-CiL" secondAttribute="bottom" constant="8" symbolic="YES" id="sJT-mc-sdb"/>
+                            <constraint firstItem="xhv-C5-MeR" firstAttribute="leading" secondItem="TTs-Rz-AA0" secondAttribute="leadingMargin" constant="34" id="zlk-Nd-pMV"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ci9-jY-C3J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2172" y="-315"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2bd-vv-MyZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e9U-BR-E98" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="JX1-at-wca">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MKp-33-9ql" kind="relationship" relationship="rootViewController" id="G4c-oL-4ht"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bjf-R9-4xX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1820" y="-1066.4167916041979"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Rewards" width="250" height="47"/>
         <image name="ScanQRImage" width="250" height="47"/>
-        <image name="shopify-faae7065b7b351d28495b345ed76096c03de28bac346deb1e85db632862fd0e4.png" width="16" height="16"/>
+        <image name="back_to_drink_rewards" width="323" height="79"/>
+        <image name="bar_list_image" width="375" height="503"/>
+        <image name="beer" width="89" height="153"/>
+        <image name="car_horizontal" width="206" height="102"/>
+        <image name="discount_rewards_text" width="295" height="21"/>
+        <image name="discount_rewards_title" width="322" height="38"/>
+        <image name="goHome" width="28" height="30"/>
+        <image name="logo" width="334" height="105"/>
+        <image name="promo_code" width="236" height="63"/>
+        <image name="randomQR" width="100" height="100"/>
+        <image name="ride_rewards_button" width="292" height="79"/>
+        <image name="ride_rewards_car" width="61" height="239"/>
+        <image name="ride_rewards_redeem" width="257" height="51"/>
+        <image name="ride_rewards_saved" width="225" height="110"/>
+        <image name="ride_rewards_title" width="307" height="46"/>
+        <image name="see_drink_rewards" width="286" height="60"/>
+        <image name="see_ride_rewards" width="286" height="60"/>
+        <image name="three_small" width="221" height="21"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="zSt-lU-yd6"/>
+        <segue reference="6WV-FI-iFi"/>
+        <segue reference="VsB-EN-pD4"/>
+        <segue reference="yIl-5a-MLl"/>
+    </inferredMetricsTieBreakers>
 </document>

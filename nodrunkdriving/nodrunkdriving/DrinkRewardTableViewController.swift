@@ -59,7 +59,8 @@ class DrinkRewardTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! DrinkRewardTableViewCell
         
-        cell.barName.text = bars[indexPath.row].barName
+        let bar = bars[indexPath.row]
+        cell.barName.text = bar.barName
         
         let num = bars[indexPath.row].starNum;
         

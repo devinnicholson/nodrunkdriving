@@ -50,7 +50,7 @@ class ScanViewController: UIViewController, AVCaptureMetadataOutputObjectsDelega
                 controller?.addAction(failAction)
                 self.present(controller!, animated: true, completion: nil)
             } else {
-                controller = UIAlertController(title: "Scan Complete!", message: metadataObj.stringValue, preferredStyle: .alert)
+                controller = UIAlertController(title: "Scan Complete!", message: nil, preferredStyle: .alert)
                 controller?.addAction(successAction)
                 self.present(controller!, animated: true, completion: nil)
                 self.foundInfo = metadataObj.stringValue
