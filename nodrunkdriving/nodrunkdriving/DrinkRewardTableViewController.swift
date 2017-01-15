@@ -17,7 +17,7 @@ class DrinkRewardTableViewController: UITableViewController {
         var starNum: Int
         var unlocked: Bool
         
-        init( b: String, s: Int, u: Bool) {
+        init(b: String, s: Int, u: Bool) {
             
             barName = b
             starNum = s
@@ -57,7 +57,7 @@ class DrinkRewardTableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as!DrinkRewardTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! DrinkRewardTableViewCell
         
         cell.barName.text = bars[indexPath.row].barName
         

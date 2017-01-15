@@ -14,13 +14,17 @@ class FirstViewController: UIViewController {
     // MARK: Outlets
     
     @IBOutlet weak var logoView: UIImageView!
-
-
-
-    @IBAction func seeRewards(_ sender: Any) {
-    }
     
     @IBAction func getRide(_ sender: Any) {
+        let sloSafeRideURL = URL(string: "itms://itunes.apple.com/us/app/slo-safe-ride/id986242643?mt=8")
+        
+        if UIApplication.shared.canOpenURL(sloSafeRideURL! as URL) {
+            UIApplication.shared.open(sloSafeRideURL!, options: [:], completionHandler: nil)
+        } else {
+            // User does not have the app, take them to itunes
+            let itunesLink = URL(string: "https://itunes.apple.com/us/app/slo-safe-ride/id986242643?mt=8")
+            UIApplication.shared.open(itunesLink!, options: [:], completionHandler: nil)
+        }
     }
     
     
